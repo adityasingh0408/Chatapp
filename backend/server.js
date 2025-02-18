@@ -22,7 +22,7 @@ app.use(cookieParser());
 
 
 app.use(cors({
-  origin: "http://localhost:3000", // Allow requests from your frontend
+  origin: "https://chatapp-ljub.onrender.com/", // Allow requests from your frontend
   credentials: true               // Allow cookies to be sent
 }));
 
