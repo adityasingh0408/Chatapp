@@ -16,7 +16,7 @@ export const SocketContextProvider = ({ children }) => {
 		console.log("AuthUser before socket connection:", authuser);
 		if (authuser) {
 			console.log("Attempting to connect to Socket.IO...");
-			const Socket = io("http://localhost:5000", {
+			const Socket = io("https://chatapp-ljub.onrender.com/", {
 				query: { userId: authuser._id },
 			});
 	
