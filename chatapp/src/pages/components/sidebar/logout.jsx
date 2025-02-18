@@ -1,11 +1,13 @@
 import React from "react";
 import { TbLogout2 } from "react-icons/tb";
+import uselogout from "../../../hooks/uselogout";
 const Logout =()=>{
+    const{logout} =uselogout();
     return(
 <>
 
 <div >
-      <TbLogout2 size={30} className=" w-10 cursor-pointer" />
+      <TbLogout2 size={30} className=" w-10 cursor-pointer" onClick={logout}/>
     </div>
 
 </>)

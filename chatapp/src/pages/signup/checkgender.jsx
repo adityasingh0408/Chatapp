@@ -1,8 +1,8 @@
 import React from 'react';
 
-const CheckGender = () => {
+const CheckGender = ({ oncheckboxchange, selectedgender }) => {
   return (
-    <div className='flex items-center justify-center min-w-96 mx-auto'>
+    <div className="flex items-center justify-center min-w-96 mx-auto">
       <div className="form-control flex-shrink">
         <label className="label cursor-pointer flex items-center justify-center">
           <input
@@ -10,6 +10,8 @@ const CheckGender = () => {
             name="gender"
             value="male"
             className="radio radio-primary"
+            checked={selectedgender === "male"}
+            onChange={() => oncheckboxchange("male")}
           />
           <span className="label-text ml-2">Male</span>
         </label>
@@ -22,6 +24,8 @@ const CheckGender = () => {
             name="gender"
             value="female"
             className="radio radio-primary"
+            checked={selectedgender === "female"}
+            onChange={() => oncheckboxchange("female")}
           />
           <span className="label-text ml-2">Female</span>
         </label>
@@ -31,6 +35,7 @@ const CheckGender = () => {
 };
 
 export default CheckGender;
+
 
 /*
 code for checkgender

@@ -6,10 +6,10 @@ const generatetokenandsetcookies=(Userid , res)=>{
         {expiresIn : "15d"})
 
     res.cookie("jwt" ,token ,{
-        maxage:15*24*60*1000,
+        maxAge:15*24*60*1000,
         httponly : true , // prevents xxs attacks cross site  scripting  attacks
         secure: process.env.NODE_ENV !== "development", // Set to true for production, ensures cookie is only sent over HTTPS
         sameSite: "strict" // Helps prevent CSRF attacks
     })
 }
-export default generatetokenandsetcookies;
+export default generatetokenandsetcookies; 

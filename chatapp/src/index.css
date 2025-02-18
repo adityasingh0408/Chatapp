@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    background-image: url('/cyborg-couple-5d.jpg'); /* Replace with your image path */
+    background-image: url('/2.jpg'); /* Replace with your image path */
     background-size: cover; /* Ensures the image covers the entire screen */
     background-repeat: no-repeat; /* Prevents repetition of the image */
     background-attachment: fixed; /* Keeps the image fixed during scrolling */
