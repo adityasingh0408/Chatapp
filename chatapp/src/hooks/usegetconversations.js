@@ -8,7 +8,7 @@ useEffect(()=>{
     const getconversation = async()=>{
         setloading(true);
         try {
-            const res = await fetch("http://localhost:5000/api/users",{
+            const res = await fetch("https://chatapp-ljub.onrender.com/api/users",{
                 method:'GET',
                 credentials:'include'
             });

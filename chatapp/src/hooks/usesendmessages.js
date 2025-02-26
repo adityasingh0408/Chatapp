@@ -9,7 +9,7 @@ const useSendMessage = () => {
 	const sendMessage = async (message) => {
 		setLoading(true);
 		try {
-			const res = await fetch(`http://localhost:5000/api/message/send/${selectedconversation._id}`, {
+			const res = await fetch(`https://chatapp-ljub.onrender.com/api/message/send/${selectedconversation._id}`, {
 				method: "POST",
                 credentials:"include",
 				headers: {

@@ -7,7 +7,7 @@ const  uselogout =()=>{
 const logout = async()=>{
     setloading(true)
 try {
-    const res = await fetch('http://localhost:5000/api/auth/logout', {
+    const res = await fetch('https://chatapp-ljub.onrender.com/api/auth/logout', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

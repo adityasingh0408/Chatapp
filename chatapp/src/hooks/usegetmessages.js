@@ -20,7 +20,7 @@ const usegetmessages = () => {
       setLoading(true);
       try {
         const res = await fetch(
-          `http://localhost:5000/api/message/${selectedconversation._id}`,
+          `https://chatapp-ljub.onrender.com/api/message/${selectedconversation._id}`,
           {
             method: "GET",
             credentials: "include",
